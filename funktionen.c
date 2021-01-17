@@ -1,9 +1,9 @@
-/* U5-Funktionen.c
+/* funktionen.c
  Programm zur Berechnung von der Oberflaeche,Volumen,Diagonale eines Würfels
  Autor/Autorin: Stephan Schmidt
- Datum: 16.01.2021
+ Datum: 18.01.2021
  Kontakt: stephan.schmidt@htwsaar.de
- Compile: gcc -Wall -pedantic main.c -o U5-funktionen -std=c99
+ Compile: gcc -Wall -pedantic funktionen.c -o aufgabe3 -std=c99
 */
 
 #include <stdio.h>
@@ -73,7 +73,7 @@ int randomZahlen[MAX] ={0};
 int anzahlDesFeldes = 29;
 int minwert = 0;
 int anzahlMinwert = 0;
-init_random_number();
+init_random_number(); // ohne init_random_number kommen immer die gleichen Zahlen an den gleichen Speicherstellen raus
 printf("Zufallswerte zwischen 1 und 49\n");
 fuellen(randomZahlen, anzahlDesFeldes);
 minwert = feld_ausgeben(randomZahlen, anzahlDesFeldes);
