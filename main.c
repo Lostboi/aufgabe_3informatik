@@ -1,3 +1,11 @@
+/* U5-Funktionen.c
+ Programm zur Berechnung von der Oberflaeche,Volumen,Diagonale eines Würfels
+ Autor/Autorin: Stephan Schmidt
+ Datum: 16.01.2021
+ Kontakt: stephan.schmidt@htwsaar.de
+ Compile: gcc -Wall -pedantic main.c -o U5-funktionen -std=c99
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -5,8 +13,8 @@
 
 void init_random_number(void){
     long sec = 0L;
-    time(sec);
-    srand(&sec);
+    time(&sec);
+    srand(sec);
 }
 
 int get_random_number (int min, int max){
